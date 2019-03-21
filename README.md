@@ -1,5 +1,7 @@
 # boothclient
-Public source code for the DJBooth android client.
+Public source code for the DJBooth android client.  [Shortcut to the actual code](https://github.com/gilmore606/boothclient/tree/master/app/src/main/java/com/dlfsystems/BoothClient)
+
+
 ### What's this?
 This is an Android app for the DJBooth community radio streaming service, a work in progress.  DJBooth lets users create, curate
 and live-DJ their own radio stations collaboratively with other users.  This app provides the full functionality of the system, letting 
