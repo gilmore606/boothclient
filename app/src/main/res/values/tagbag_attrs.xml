@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Tagbag">
+        <attr name="tagSpacing" format="integer" />
+        <attr name="rowSpacing" format="integer" />
+        <attr name="editable" format="boolean" />
+        <attr name="description" format="string" default="tags" />
+    </declare-styleable>
+</resources>

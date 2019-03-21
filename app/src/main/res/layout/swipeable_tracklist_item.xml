@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dlfsystems.BoothClient.views.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:dragFromEdge="right" >
+
+    <FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:background="@color/colorAccent"
+                  android:layout_width="wrap_content" android:layout_height="match_parent" >
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                      android:gravity="center_vertical|end"
+                      android:paddingStart="30dp" android:paddingEnd="30dp"
+                      android:orientation="horizontal" >
+            <ImageButton android:id="@+id/swipelist_queue"
+                         android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         app:srcCompat="@drawable/icon_queue_small" android:text="queue" android:background="@null" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/swipeable_tracklist_toplayer"
+                 android:layout_width="match_parent" android:layout_height="match_parent"
+                 android:clickable="true"
+                 android:background="#FFFFFF" >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      android:paddingHorizontal="16dp"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:padding="4dp"
+                          android:layout_weight="1"
+            >
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/searchlist_item_title" style="@style/ListItemTitle"
+                          android:padding="1dp"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/searchlist_item_artist" style="@style/ListItemSub"
+                          android:padding="1dp" />
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/searchlist_item_status" style="@style/tinyHeader"
+                      android:layout_gravity="center"
+                      android:layout_weight="0" />
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical|end"
+                         app:srcCompat="@drawable/swipe_thumb" android:background="@null" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</com.dlfsystems.BoothClient.views.SwipeRevealLayout>

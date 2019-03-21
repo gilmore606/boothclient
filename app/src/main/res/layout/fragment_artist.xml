@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/artist_scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="@drawable/bg_lesslight"
+                  android:padding="0dp">
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <ImageView android:id="@+id/artist_image" android:layout_width="match_parent"
+                       android:layout_height="350dp"
+                       android:src="@drawable/albumart_placeholder"
+                       android:scaleType="fitCenter"
+                       android:background="#000000"
+                       android:padding="0dp" android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="@drawable/bg_tinyheader"
+                  android:paddingHorizontal="12dp"
+                  android:paddingVertical="6dp"
+                  style="@style/tinyHeader"
+                  android:text="I N F O"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/artist_infotext" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="@drawable/bg_tinyheader"
+                  android:paddingHorizontal="12dp"
+                  android:paddingVertical="6dp"
+                  style="@style/tinyHeader"
+                  android:text="T R A C K S"/>
+
+        <com.dlfsystems.BoothClient.views.TracklistView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/artist_tracklist" />
+
+    </LinearLayout>
+</ScrollView>

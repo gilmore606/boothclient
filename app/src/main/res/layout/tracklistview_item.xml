@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content" >
+    <FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:background="@drawable/bg_swipetools"
+                  android:layout_gravity="center_vertical"
+                  android:layout_width="wrap_content" android:layout_height="50dp" >
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                      android:gravity="center_vertical|end" android:layout_gravity="center_vertical|end"
+                      android:paddingStart="20dp" android:paddingEnd="20dp"
+                      android:orientation="horizontal" >
+            <ImageButton android:id="@+id/tracklistview_queue"
+                         android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical" android:gravity="center_vertical"
+                         app:srcCompat="@drawable/icon_queue_small" android:text="queue" android:background="@null" />
+            <ImageButton android:id="@+id/tracklistview_unqueue"
+                         android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical" android:gravity="center_vertical"
+                         android:visibility="gone"
+                         app:srcCompat="@drawable/icon_unqueue_small" android:text="queue" android:background="@null" />
+            <ImageButton android:id="@+id/tracklistview_skip"
+                         android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical" android:gravity="center_vertical"
+                         android:visibility="gone"
+                         app:srcCompat="@drawable/icon_skip_small" android:text="queue" android:background="@null" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/swipeable_tracklist_toplayer"
+                 android:layout_width="match_parent" android:layout_height="50dp"
+                 android:clickable="true"
+                 android:background="@drawable/bg_lesslight" >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+                        android:orientation="vertical" android:padding="0dp">
+            <View android:background="#949430"
+                  android:layout_width = "match_parent"
+                  android:gravity="top"
+                  android:layout_height="0.5dp" android:padding="0dp" android:layout_margin="0dp" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          xmlns:app="http://schemas.android.com/apk/res-auto"
+                          android:paddingHorizontal="16dp"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="49dp">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="vertical"
+                              android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:padding="4dp"
+                              android:layout_weight="1"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/searchlist_item_title" style="@style/ListItemTitle"
+                              android:padding="1dp"
+                    />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/searchlist_item_artist" style="@style/ListItemSub"
+                              android:padding="1dp" />
+
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/tracklistview_item_status" style="@style/tinyHeader"
+                          android:layout_gravity="center"
+                          android:layout_weight="0" />
+                <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_gravity="center_vertical|end"
+                             app:srcCompat="@drawable/swipe_thumb" android:background="@null" />
+
+            </LinearLayout>
+            <View android:background="#949430"
+                  android:layout_width = "match_parent"
+                  android:gravity="bottom"
+                  android:layout_height="0.5dp" android:padding="0dp" android:layout_margin="0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

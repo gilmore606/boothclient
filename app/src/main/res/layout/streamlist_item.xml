@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListTheme"
+                 >
+    <ImageView android:id="@+id/streamlist_item_logo" android:layout_width="96dp" android:layout_height="96dp"
+               android:background="#77000000" android:padding="2dp"
+               android:layout_marginLeft="16dp"
+               android:layout_marginVertical="16dp" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/streamlist_item_logo_overlay" android:layout_width="96dp" android:layout_height="96dp"
+               app:srcCompat="@drawable/now_playing_icon"
+               android:padding="2dp"
+               android:layout_marginLeft="16dp"
+               android:layout_marginVertical="16dp" android:layout_centerVertical="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:id="@+id/streamlist_item_textlines"
+                  android:layout_toRightOf="@id/streamlist_item_logo"
+                  android:layout_centerVertical="true"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:paddingLeft="12dp" android:paddingVertical="8dp"
+                  android:layout_marginRight="16dp"
+                  >
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/streamlist_item_name" style="@style/StreamlistItemTitle"
+                  android:padding="2dp"
+                  />
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@android:color/darker_gray" android:padding="2dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/streamlist_item_spinning" style="@style/StreamlistItemSpinning"
+                  android:padding="2dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/streamlist_item_playing" style="@style/StreamlistItemPlaying"
+                  android:padding="2dp"
+                  />
+
+    </LinearLayout>
+
+</RelativeLayout>
