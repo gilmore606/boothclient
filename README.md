@@ -24,6 +24,7 @@ It's all in Kotlin (save for one Java view class), and makes use of these librar
 * **Auth0 (with JWT)** - for universal auth via Google, Facebook, etc
 * **SimpleStack** - an extension of the popular Flow library for fragment backstack management
 * **PagedList**
+* **Fabric / Crashlytics**
 
 The architecture uses no specific MV* pattern but follows the MVI principles of unidirectional data flow, single state, and
 an overall reactive/functional approach.
